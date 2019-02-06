@@ -6,7 +6,7 @@ import app from './server';
 
 const certs = {
   cert: fs.readFileSync(path.join(__dirname, '../../private/cert.pem')),
-  key: fs.readFileSync(path.join(__dirname, '../../private/cert.key'))
+  key: fs.readFileSync(path.join(__dirname, '../../private/cert.key')),
 };
 
 http2
