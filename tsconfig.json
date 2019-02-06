@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "es6",
+    "alwaysStrict": true,
+    "noImplicitAny": false,
+    "outDir": "./build",
+    "sourceMap": true,
+    "jsx": "react",
+    "lib": ["es5", "es6", "dom", "es2015.promise", "scripthost", "es2015"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "node"
+  },
+  "include": ["types/*", "src/**/*"],
+  "exclude": ["build", "coverage", "node_modules", "types", "**/*.spec.ts", "**/*.test.ts*", "**/__tests__/*"]
+}

@@ -1,0 +1,67 @@
+{
+  "name": "znappit",
+  "version": "1.0.0",
+  "description": "A loving place for your Github gists and notes and stuff",
+  "main": "index.js",
+  "scripts": {
+    "watch:server": "./node_modules/.bin/nodemon --watch 'src/server/**/*' -e ts --exec 'ts-node' src/server/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nonlogos/znappit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nonlogos/znappit/issues"
+  },
+  "homepage": "https://github.com/nonlogos/znappit#readme",
+  "dependencies": {
+    "http": "^0.0.0",
+    "http2": "^3.3.7",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "koa-send": "^5.0.0",
+    "koa2-cors": "^2.0.6",
+    "koa2-winston": "^3.1.1",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-router-dom": "^4.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.3.1",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-typescript": "^7.1.0",
+    "@types/koa": "^2.0.48",
+    "@types/koa-bodyparser": "^4.2.1",
+    "@types/koa-cors": "^0.0.0",
+    "@types/koa-router": "^7.0.39",
+    "@types/koa-webpack": "^5.0.1",
+    "@types/react": "^16.8.1",
+    "@types/react-dom": "^16.0.11",
+    "@types/webpack-dev-middleware": "^2.0.2",
+    "@types/webpack-hot-client": "^4.0.0",
+    "babel-loader": "^8.0.5",
+    "cross-env": "^5.2.0",
+    "file-loader": "^3.0.1",
+    "html-webpack-plugin": "^4.0.0-beta.5",
+    "image-webpack-loader": "^4.6.0",
+    "koa-webpack": "^5.2.1",
+    "koa2-connect": "^1.0.2",
+    "nodemon": "^1.18.9",
+    "ts-loader": "^5.3.3",
+    "ts-node": "^8.0.2",
+    "tslint": "^5.12.1",
+    "tslint-config-prettier": "^1.17.0",
+    "typescript": "^3.3.1",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-middleware": "^3.5.1",
+    "webpack-hot-middleware": "^2.24.3",
+    "webpack-merge": "^4.2.1",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
