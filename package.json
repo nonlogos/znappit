@@ -4,7 +4,7 @@
   "description": "A loving place for your Github gists and notes and stuff",
   "main": "index.js",
   "scripts": {
-    "watch:server": "./node_modules/.bin/nodemon --watch 'src/server/**/*' -e ts --exec 'ts-node' src/server/index.ts"
+    "watch": "./node_modules/.bin/nodemon --watch 'src/server/**/*' -r dotenv/config src/server/index.ts -e ts --exec 'ts-node' src/server/index.ts"
   },
   "repository": {
     "type": "git",
@@ -17,12 +17,16 @@
   },
   "homepage": "https://github.com/nonlogos/znappit#readme",
   "dependencies": {
+    "chalk": "^2.4.2",
+    "dotenv": "^6.2.0",
     "http": "^0.0.0",
     "http2": "^3.3.7",
     "koa": "^2.7.0",
     "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0",
     "koa-send": "^5.0.0",
+    "koa-session2": "^2.2.8",
+    "koa-sslify": "^4.0.3",
     "koa2-cors": "^2.0.6",
     "koa2-winston": "^3.1.1",
     "react": "^16.7.0",

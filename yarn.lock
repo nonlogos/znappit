@@ -2443,6 +2443,11 @@ dot-prop@^4.1.0:
   dependencies:
     is-obj "^1.0.0"
 
+dotenv@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-6.2.0.tgz#941c0410535d942c8becf28d3f357dbd9d476064"
+  integrity sha512-HygQCKUBSFl8wKQZBSemMywRWcEDNidvNbjGVyZu3nbZ8qq9ubiPoGLMdRDpfSrpkkm9BXYFkpKxxFX38o/76w==
+
 download@^6.2.2:
   version "6.2.5"
   resolved "https://registry.yarnpkg.com/download/-/download-6.2.5.tgz#acd6a542e4cd0bb42ca70cfc98c9e43b07039714"
@@ -4136,6 +4141,16 @@ koa-send@^5.0.0:
     http-errors "^1.6.3"
     mz "^2.7.0"
     resolve-path "^1.4.0"
+
+koa-session2@^2.2.8:
+  version "2.2.8"
+  resolved "https://registry.yarnpkg.com/koa-session2/-/koa-session2-2.2.8.tgz#6aa1381a4be9880ded70c8b8ee235b16a262ad1d"
+  integrity sha512-7S63hTpzzdU4GOYI0bGz6X82AmvlVUqVjproHiC0ytOCVRw6sCma7xzMa2p/QKF2vq/dB5UDuACroQtjFmqqVg==
+
+koa-sslify@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/koa-sslify/-/koa-sslify-4.0.3.tgz#79ec31042a607d0c4c0a32e21cea513708840c1c"
+  integrity sha512-5RwsRc+Zkawoq9ev5pNAPP8r+wj4Eqo3b7IfSXrpYISBDNo0fwrMcYMioR+B00piV9NpXqPZA4gh36SpIeZSvw==
 
 koa-webpack@^5.2.1:
   version "5.2.1"

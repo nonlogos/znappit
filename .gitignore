@@ -1,2 +1,11 @@
+# node modules
 node_modules/
+
+# Built directory
 dist/
+
+#Private keys and configs
+private/
+.env
+
+.DS_Store

@@ -23,6 +23,10 @@ module.exports = {
         use: 'ts-loader',
       },
       {
+        test: /\.ico$/,
+        loader: 'file-loader',
+      },
+      {
         test: /\.(jpe?g|png|gif|svg)$/i,
         use: [
           'file-loader',
@@ -55,7 +59,13 @@ module.exports = {
       },
     ],
   },
-  plugins: [new HtmlWebpackPlugin({ template: resolve(join(__dirname, '../../src/client/index.html')) })],
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: resolve(join(__dirname, '../../src/client/index.html')),
+      favicon: resolve(join(__dirname, '../../src/client/assets/favicon.ico')),
+      title: 'Znappit',
+    }),
+  ],
   performance: {
     hints: false,
   },

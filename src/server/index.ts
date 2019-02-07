@@ -1,14 +1,22 @@
-import * as http2 from 'http2';
-import * as fs from 'fs';
-import * as path from 'path';
+import http from 'http';
+import http2 from 'http2';
+import net from 'net';
+import chalk from 'chalk';
+import fs from 'fs';
+import path from 'path';
 
 import app from './server';
 
 const certs = {
-  cert: fs.readFileSync(path.join(__dirname, '../../private/cert.pem')),
-  key: fs.readFileSync(path.join(__dirname, '../../private/cert.key')),
+  cert: fs.readFileSync(path.join(__dirname, '../../private/local.com.cert')),
+  key: fs.readFileSync(path.join(__dirname, '../../private/local.com.key')),
 };
 
-http2
-  .createSecureServer(certs, app.callback())
-  .listen(3000, () => console.log('http2 server listening on localhost:3000'));
+// start the server
+
+http2.createSecureServer(certs, app.callback()).listen(process.env.HTTPS_ADDRESS, error => {
+  if (error) {
+    process.stderr.write(chalk.red(`http2 server error:${error}\n`));
+  }
+  process.stdout.write(chalk.yellow(`http2 server listening on localhost:${process.env.HTTPS_ADDRESS}\n`));
+});
